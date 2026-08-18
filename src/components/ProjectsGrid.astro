@@ -231,6 +231,24 @@ const projectsJson = JSON.stringify(
             ></path>
           </svg>
         </a>
+        <a id="modal-link-2" href="#" target="_blank" rel="noopener" class="modal-cta-link hidden mt-2">
+          <img
+            src={withBase('/images/assets/icon--link.png')}
+            alt=""
+            width={18}
+            height={18}
+            class="modal-link-icon"
+          />
+          <span id="modal-link-text-2">Ver repositorio backend</span>
+          <svg class="modal-cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            ></path>
+          </svg>
+        </a>
         <p id="modal-no-link" class="modal-no-link hidden">Private / No public link available.</p>
       </div>
     </div>
@@ -319,6 +337,8 @@ const projectsJson = JSON.stringify(
   const modalTags = document.getElementById('modal-tags');
   const modalLink = document.getElementById('modal-link');
   const modalLinkTx = document.getElementById('modal-link-text');
+  const modalLink2 = document.getElementById('modal-link-2');
+  const modalLinkTx2 = document.getElementById('modal-link-text-2');
   const modalNoLink = document.getElementById('modal-no-link');
   
   const carouselSlides = document.getElementById('carousel-slides');
@@ -398,15 +418,25 @@ const projectsJson = JSON.stringify(
 
     if (p.link) {
       modalLink.href = p.link;
-      if (p.link.includes('github.com')) modalLinkTx.textContent = 'View on GitHub';
-      else if (p.link.includes('gitlab')) modalLinkTx.textContent = 'View on GitLab';
-      else if (p.link.includes('blog')) modalLinkTx.textContent = 'Read the Post';
-      else modalLinkTx.textContent = 'View Project';
+      if (p.link.includes('github.com')) modalLinkTx.textContent = p.linkText || 'Ver en GitHub';
+      else if (p.link.includes('gitlab')) modalLinkTx.textContent = p.linkText || 'Ver en GitLab';
+      else if (p.link.includes('blog')) modalLinkTx.textContent = p.linkText || 'Leer artículo';
+      else modalLinkTx.textContent = p.linkText || 'Ver Proyecto';
       modalLink.classList.remove('hidden');
       modalNoLink.classList.add('hidden');
     } else {
       modalLink.classList.add('hidden');
       modalNoLink.classList.remove('hidden');
+    }
+
+    if (p.link2) {
+      modalLink2.href = p.link2;
+      modalLinkTx2.textContent = p.link2Text || 'Ver en GitHub';
+      modalLink2.classList.remove('hidden');
+      modalLink2.classList.add('flex');
+    } else {
+      modalLink2.classList.add('hidden');
+      modalLink2.classList.remove('flex');
     }
 
     // The `hidden` attribute (not a CSS class) is used here because the modal-backdrop rule

@@ -12,7 +12,14 @@
       "Diseñé y ejecuté estrategias de calidad de software mediante pruebas unitarias, de integración y funcionales utilizando JUnit y MockK, garantizando la estabilidad de la aplicación institucional tras su transición tecnológica.",
       "Tecnologías: Kotlin, Jetpack Compose, Clean Architecture, Room, JUnit, MockK, Android Studio."
     ],
-    "tags": ["Kotlin", "Jetpack Compose", "Room", "JUnit", "MockK", "Android Studio"]
+    "tags": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Room",
+      "JUnit",
+      "MockK",
+      "Android Studio"
+    ]
   },
   {
     "period": "08/2025 – 02/2026",
@@ -27,7 +34,12 @@
       "Diseñé y apliqué planes de prueba funcionales para la validación de cada entrega del sistema.",
       "Tecnologías: PHP, MySQL, Planes de Prueba funcionales."
     ],
-    "tags": ["PHP", "MySQL", "Planes de Prueba", "Mantenimiento"]
+    "tags": [
+      "PHP",
+      "MySQL",
+      "Planes de Prueba",
+      "Mantenimiento"
+    ]
   },
   {
     "period": "02/2022 – 06/2026",
@@ -41,6 +53,11 @@
       "Formación profesional en desarrollo de software, arquitectura de aplicaciones y aseguramiento de calidad.",
       "Proyectos académicos: TicketPlus (plataforma web), Medidietas (app multiplataforma), S.A.M.S. (sistema de escritorio)."
     ],
-    "tags": ["Ingeniería de Software", "Arquitectura", "Calidad", "Universidad Veracruzana"]
+    "tags": [
+      "Ingeniería de Software",
+      "Arquitectura",
+      "Calidad",
+      "Universidad Veracruzana"
+    ]
   }
 ]

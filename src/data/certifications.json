@@ -1,23 +1,5 @@
 [
   {
-    "name": "Practicante de Desarrollo Móvil en Android (Eminus)",
-    "issuer": "Dirección de Desarrollo Informático de Apoyo Académico, Universidad Veracruzana",
-    "date": "03/2026 - 06/2026 · Xalapa, Veracruz",
-    "status": "Completed",
-    "type": "professional-development",
-    "description": "Migración de la app institucional Eminus a Jetpack Compose, implementando Clean Architecture y Room. Diseño y ejecución de planes de prueba para documentar y garantizar la estabilidad del sistema.",
-    "credentialUrl": ""
-  },
-  {
-    "name": "Desarrollador de Software (Servicio Social)",
-    "issuer": "Facultad de Estadística e Informática, Universidad Veracruzana",
-    "date": "08/2025 - 02/2026 · Xalapa, Veracruz",
-    "status": "Completed",
-    "type": "professional-development",
-    "description": "Desarrollo de nuevas funcionalidades y corrección de defectos en código heredado para el Sistema Institucional de Gestión de Tutorías (PHP y MySQL). También diseñé y apliqué planes de prueba para validación de entregas.",
-    "credentialUrl": ""
-  },
-  {
     "name": "Licenciatura en Ingeniería de Software",
     "issuer": "Universidad Veracruzana",
     "date": "06/2026 · Xalapa, Veracruz",
@@ -31,7 +13,7 @@
     "issuer": "Plantel Conalep 153",
     "date": "08/2017 - 06/2020 · Teziutlán, Puebla",
     "status": "Completed",
-    "type": "professional-development",
+    "type": "certification",
     "description": "Formación técnica en procesos administrativos y contables, fortaleciendo habilidades analíticas y de organización para proyectos de software.",
     "credentialUrl": ""
   }

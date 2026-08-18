@@ -7,8 +7,8 @@
   "photo": "/images/personal/me.jpg",
   "photoAlt": "Foto de perfil de Miguel Ángel Morales Cruz",
   "email": "moralesmiguelangel176@gmail.com",
-  "phone": "+52 231 134 3356",
-  "phoneTel": "tel:+522311343356",
+  "phone": "+52 231 157 3187",
+  "phoneTel": "tel:+522311573187",
   "location": "Xalapa, Veracruz",
   "linkedin": "miguel-angel-morales-381b8a385",
   "github": "MiguelMorales2002",
@@ -32,18 +32,55 @@
   "education": "Licenciatura en Ingeniería de Software · Universidad Veracruzana (2026)",
   "portfolioUrl": "",
   "heroRole": "Desarrollador (Móvil/Backend) con enfoque en la Calidad del Software (QA)",
-  "heroSocialLinks": ["github", "linkedin"],
+  "heroSocialLinks": [
+    "github",
+    "linkedin"
+  ],
   "bio": "Desarrollador de software con experiencia práctica en aplicaciones móviles y backend. Capaz de diseñar arquitecturas limpias y asegurar la estabilidad de los sistemas mediante el diseño y ejecución de pruebas automatizadas.",
   "aboutLong": "Desarrollador de software orientado a resultados con experiencia práctica en aplicaciones móviles y backend. Especializado en el uso de Kotlin, Node.js y C#, enfoco mi trabajo en diseñar arquitecturas limpias y escribir pruebas automatizadas (unitarias, de integración y funcionales). Acostumbrado a colaborar en la refactorización de código, despliegue con contenedores y resolución de defectos. Busco integrarme a un equipo donde pueda aportar soluciones robustas, asegurar la calidad del software y mantener un aprendizaje técnico continuo.",
   "languages": [
-    { "name": "Español", "level": "Nativo", "percent": 100 },
-    { "name": "Inglés", "level": "Intermedio", "percent": 60 }
+    {
+      "name": "Español",
+      "level": "Nativo",
+      "percent": 100
+    },
+    {
+      "name": "Inglés",
+      "level": "Intermedio",
+      "percent": 60
+    }
   ],
-  "interests": ["Desarrollo Frontend", "Pruebas de Software", "Desarrollo Backend"],
+  "interests": [
+    "Desarrollo Frontend",
+    "Pruebas de Software",
+    "Desarrollo Backend"
+  ],
   "skills": {
-    "Backend & APIs": ["Node.js", "PHP", "C#", "REST", "gRPC"],
-    "Móvil & Frontend": ["Kotlin (Jetpack Compose)", "Java", "React", "JavaScript"],
-    "Testing & Calidad": ["JUnit", "MockK", "Jest", "Supertest", "Selenium"],
-    "Bases de Datos & Infraestructura": ["MySQL", "SQL Server", "Room", "Docker"]
+    "Backend & APIs": [
+      "Node.js",
+      "PHP",
+      "C#",
+      "REST",
+      "gRPC"
+    ],
+    "Móvil & Frontend": [
+      "Kotlin (Jetpack Compose)",
+      "Java",
+      "React",
+      "JavaScript"
+    ],
+    "Testing & Calidad": [
+      "JUnit",
+      "MockK",
+      "Jest",
+      "Supertest",
+      "Selenium"
+    ],
+    "Bases de Datos & Infraestructura": [
+      "MySQL",
+      "SQL Server",
+      "Room",
+      "Docker"
+    ]
   }
 }

@@ -7,8 +7,8 @@
   "photo": "/images/personal/me.jpg",
   "photoAlt": "Profile photo of Miguel Ángel Morales Cruz",
   "email": "moralesmiguelangel176@gmail.com",
-  "phone": "+52 231 134 3356",
-  "phoneTel": "tel:+522311343356",
+  "phone": "+52 231 157 3187",
+  "phoneTel": "tel:+522311573187",
   "location": "Xalapa, Veracruz",
   "linkedin": "miguel-angel-morales-381b8a385",
   "github": "MiguelMorales2002",
@@ -31,18 +31,55 @@
   "education": "B.S. in Software Engineering · Universidad Veracruzana (2026)",
   "portfolioUrl": "",
   "heroRole": "Mobile/Backend Developer with a strong focus on Software Quality (QA)",
-  "heroSocialLinks": ["github", "linkedin"],
+  "heroSocialLinks": [
+    "github",
+    "linkedin"
+  ],
   "bio": "Software developer with hands-on experience in mobile and backend applications. Capable of designing clean architectures and ensuring system stability through the design and execution of automated tests.",
   "aboutLong": "Results-oriented software developer with hands-on experience in mobile and backend applications. Specialized in Kotlin, Node.js, and C#, I focus my work on designing clean architectures and writing automated tests (unit, integration, and functional). Accustomed to collaborating on code refactoring, containerized deployments, and bug resolution. I am looking to join a team where I can provide robust solutions, ensure software quality, and maintain continuous technical learning.",
   "languages": [
-    { "name": "Spanish", "level": "Native", "percent": 100 },
-    { "name": "English", "level": "Intermediate", "percent": 60 }
+    {
+      "name": "Spanish",
+      "level": "Native",
+      "percent": 100
+    },
+    {
+      "name": "English",
+      "level": "Intermediate",
+      "percent": 60
+    }
   ],
-  "interests": ["Frontend Development", "Software Testing", "Backend Development"],
+  "interests": [
+    "Frontend Development",
+    "Software Testing",
+    "Backend Development"
+  ],
   "skills": {
-    "Backend & APIs": ["Node.js", "PHP", "C#", "REST", "gRPC"],
-    "Mobile & Frontend": ["Kotlin (Jetpack Compose)", "Java", "React", "JavaScript"],
-    "Testing & Quality": ["JUnit", "MockK", "Jest", "Supertest", "Selenium"],
-    "Databases & Infrastructure": ["MySQL", "SQL Server", "Room", "Docker"]
+    "Backend & APIs": [
+      "Node.js",
+      "PHP",
+      "C#",
+      "REST",
+      "gRPC"
+    ],
+    "Mobile & Frontend": [
+      "Kotlin (Jetpack Compose)",
+      "Java",
+      "React",
+      "JavaScript"
+    ],
+    "Testing & Quality": [
+      "JUnit",
+      "MockK",
+      "Jest",
+      "Supertest",
+      "Selenium"
+    ],
+    "Databases & Infrastructure": [
+      "MySQL",
+      "SQL Server",
+      "Room",
+      "Docker"
+    ]
   }
 }
