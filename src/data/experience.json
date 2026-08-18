@@ -9,7 +9,7 @@
     "icon": "device-phone-mobile",
     "achievements": [
       "Ejecuté la migración de la app institucional Eminus a modelos declarativos con Jetpack Compose, implementando Clean Architecture y Room para la persistencia local.",
-      "Desarrollé y ejecuté planes de prueba de software con JUnit y MockK para documentar y garantizar la estabilidad del sistema tras la transición tecnológica.",
+      "Diseñé y ejecuté estrategias de calidad de software mediante pruebas unitarias, de integración y funcionales utilizando JUnit y MockK, garantizando la estabilidad de la aplicación institucional tras su transición tecnológica.",
       "Tecnologías: Kotlin, Jetpack Compose, Clean Architecture, Room, JUnit, MockK, Android Studio."
     ],
     "tags": ["Kotlin", "Jetpack Compose", "Room", "JUnit", "MockK", "Android Studio"]

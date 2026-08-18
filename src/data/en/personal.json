@@ -30,14 +30,19 @@
   "cv": "",
   "education": "B.S. in Software Engineering · Universidad Veracruzana (2026)",
   "portfolioUrl": "",
-  "heroRole": "Software Engineer & Mobile/Web Developer",
+  "heroRole": "Mobile/Backend Developer with a strong focus on Software Quality (QA)",
   "heroSocialLinks": ["github", "linkedin"],
-  "bio": "Software engineer with hands-on experience in developing and maintaining web and mobile applications. Skilled in Kotlin, PHP, Java, Node.js, and RESTful APIs.",
-  "aboutLong": "Software engineer with hands-on experience in developing and maintaining web and mobile applications. Skilled in Kotlin, PHP, Java, Node.js, and RESTful APIs. Accustomed to collaborating on system updates, code refactoring, and bug resolution. I am looking to join a collaborative development team to apply my knowledge, provide functional solutions, and maintain continuous technical learning.",
+  "bio": "Software developer with hands-on experience in mobile and backend applications. Capable of designing clean architectures and ensuring system stability through the design and execution of automated tests.",
+  "aboutLong": "Results-oriented software developer with hands-on experience in mobile and backend applications. Specialized in Kotlin, Node.js, and C#, I focus my work on designing clean architectures and writing automated tests (unit, integration, and functional). Accustomed to collaborating on code refactoring, containerized deployments, and bug resolution. I am looking to join a team where I can provide robust solutions, ensure software quality, and maintain continuous technical learning.",
   "languages": [
     { "name": "Spanish", "level": "Native", "percent": 100 },
     { "name": "English", "level": "Intermediate", "percent": 60 }
   ],
   "interests": ["Frontend Development", "Software Testing", "Backend Development"],
-  "skills": ["Kotlin", "PHP", "Java", "JavaScript", "C#", "Jetpack Compose", "Node.js", "React", "JavaFX", "REST APIs", "gRPC", "MySQL", "SQL Server", "Room", "JUnit", "MockK", "Selenium", "Postman", "Git", "GitHub"]
+  "skills": {
+    "Backend & APIs": ["Node.js", "PHP", "C#", "REST", "gRPC"],
+    "Mobile & Frontend": ["Kotlin (Jetpack Compose)", "Java", "React", "JavaScript"],
+    "Testing & Quality": ["JUnit", "MockK", "Jest", "Supertest", "Selenium"],
+    "Databases & Infrastructure": ["MySQL", "SQL Server", "Room", "Docker"]
+  }
 }
