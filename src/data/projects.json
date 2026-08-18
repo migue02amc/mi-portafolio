@@ -2,86 +2,75 @@
   "layout": "grid",
   "items": [
     {
-      "title": "Open Source Portfolio Template",
+      "title": "S.A.M.S.",
       "featured": true,
-      "resume": true,
-      "company": "Community",
-      "category": "webdev",
-      "description": "The template you're looking at right now. Built with Astro, fully data-driven, and designed to be claimed by anyone. Fork it, fill it, ship it. All placeholder content is waiting for yours.",
-      "tags": ["Astro", "TypeScript", "Tailwind CSS", "Open Source", "Template"],
-      "icon": "command-line",
-      "sliderImage": "/images/projects/use-astro2.jpg",
-      "sliderOrder": 1,
-      "backgroundImage": "/images/projects/use-astro3.jpg",
+      "company": "Sistema de Administración del Mejor Supermercado",
+      "category": "Desktop / ERP",
+      "description": "Sistema informático integral tipo ERP y Punto de Venta (POS) para gestionar inventarios, caja, compras y ventas en tiempo real. Soporta hasta 8 cajas registradoras simultáneas. Interfaz optimizada para uso táctil y tradicional.",
+      "tags": ["C#", "WPF (.NET)", "SQL Server", "Clean Architecture", "Iconix", "SHA-256"],
+      "icon": "computer-desktop",
+      "backgroundImage": "/images/projects/sams/1.png",
       "images": [
-        "/images/projects/use-astro1.jpg",
-        "/images/projects/use-astro2.jpg",
-        "/images/projects/use-astro3.jpg"
+        "/images/projects/sams/1.png",
+        "/images/projects/sams/2.png",
+        "/images/projects/sams/3.png",
+        "/images/projects/sams/4.png",
+        "/images/projects/sams/5.png"
       ],
-      "link": "",
-      "colorIcon": "devicon:astro",
-      "githubRepo": "portfolio-template"
+      "link": ""
     },
     {
-      "title": "3D Environment Study",
+      "title": "MediDietas",
       "featured": true,
-      "resume": true,
-      "company": "Personal Work",
-      "category": "blender",
-      "description": "A series of Blender scenes exploring lighting, texture, and atmosphere — no narrative, just craft. Rendered in Cycles, post-processed in Photoshop, shared as a study in patience and iteration.",
-      "tags": ["Blender", "3D Modeling", "Lighting", "Cycles Render", "Photoshop"],
-      "icon": "cpu-chip",
-      "sliderImage": "/images/projects/blender-mockup2.jpg",
-      "sliderOrder": 2,
-      "backgroundImage": "/images/projects/blender-mockup1.jpg",
+      "company": "Sistema Multiplataforma",
+      "category": "Mobile & Desktop",
+      "description": "Plataforma integral que conecta pacientes con nutriólogos para seguimiento de dietas y calorías. Arquitectura de microservicios con backend en Node.js, cliente móvil nativo en Android y cliente de escritorio en JavaFX.",
+      "tags": ["Java (Android)", "JavaFX", "Node.js", "MySQL", "gRPC", "Docker", "REST API", "Jest"],
+      "icon": "device-phone-mobile",
+      "backgroundImage": "/images/projects/medidietas/1.png",
       "images": [
-        "/images/projects/blender-mockup1.jpg",
-        "/images/projects/blender-mockup2.jpg",
-        "/images/projects/blender-mockup3.jpg"
+        "/images/projects/medidietas/1.png",
+        "/images/projects/medidietas/2.png",
+        "/images/projects/medidietas/3.png",
+        "/images/projects/medidietas/4.png"
       ],
-      "link": "",
-      "colorIcon": "devicon:blender",
-      "githubRepo": ""
+      "link": ""
     },
     {
-      "title": "Personal Design System",
+      "title": "TicketPlus",
       "featured": true,
-      "company": "Side Project",
-      "category": "design",
-      "description": "A living component library built for personal and freelance use. Design tokens, reusable components, and documentation that travel from project to project — no starting from scratch every time.",
-      "tags": ["Figma", "CSS", "TypeScript", "Design Systems", "Component Library"],
-      "icon": "document-text",
-      "sliderImage": "/images/projects/design-library3.jpg",
-      "sliderOrder": 4,
-      "backgroundImage": "/images/projects/design-library2.jpg",
+      "company": "Plataforma de E-Commerce",
+      "category": "Web",
+      "description": "Plataforma web escalable para la venta y gestión de boletos electrónicos (e-tickets) para eventos. Enfocada en alta concurrencia, UX accesible y flujos de autenticación estrictos.",
+      "tags": ["React", "JavaScript", "Node.js", "MySQL", "REST API", "JWT", "Diseño IWEB"],
+      "icon": "globe-alt",
+      "backgroundImage": "/images/projects/ticketplus/1.jpg",
       "images": [
-        "/images/projects/design-library1.jpg",
-        "/images/projects/design-library2.jpg",
-        "/images/projects/design-library3.jpg"
+        "/images/projects/ticketplus/1.jpg",
+        "/images/projects/ticketplus/2.jpg",
+        "/images/projects/ticketplus/3.jpg",
+        "/images/projects/ticketplus/4.jpg",
+        "/images/projects/ticketplus/5.jpg"
       ],
-      "link": "",
-      "colorIcon": "devicon:figma",
-      "githubRepo": "design-system"
+      "link": ""
     },
     {
-      "title": "Photography Workflow App",
-      "resume": true,
-      "company": "Side Project",
-      "category": "appdev",
-      "description": "A lightweight local web app for managing shoot intake, selects, and client delivery — replacing a patchwork of folders, spreadsheets, and emails with a single tool built for the way I work.",
-      "tags": ["React", "SQLite", "Photography", "Workflow", "Node.js"],
-      "icon": "eye",
-      "sliderImage": "/images/projects/web-app2.jpg",
-      "sliderOrder": 3,
-      "backgroundImage": "/images/projects/web-app3.jpg",
+      "title": "Hangman.NET",
+      "featured": true,
+      "company": "Videojuego Multijugador",
+      "category": "Desktop / Redes",
+      "description": "Juego multijugador en tiempo real del clásico ahorcado. Implementación de arquitectura Cliente-Servidor utilizando Windows Communication Foundation y Sockets TCP.",
+      "tags": ["C#", "WPF", "SQL Server", "WCF", "Sockets TCP", "IIS Express", "LINQ"],
+      "icon": "puzzle-piece",
+      "backgroundImage": "/images/projects/hangman/1.png",
       "images": [
-        "/images/projects/web-app1.jpg",
-        "/images/projects/web-app2.jpg",
-        "/images/projects/web-app3.jpg"
+        "/images/projects/hangman/1.png",
+        "/images/projects/hangman/2.png",
+        "/images/projects/hangman/3.png",
+        "/images/projects/hangman/4.png",
+        "/images/projects/hangman/5.png"
       ],
-      "link": "",
-      "colorIcon": "devicon:react",
-      "githubRepo": "photo-workflow"
+      "link": ""
     }
   ]
 }

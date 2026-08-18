@@ -1,0 +1,30 @@
+[
+  {
+    "key": "teamwork",
+    "icon": "🤝",
+    "title": "Teamwork",
+    "subtitle": "Effective collaboration",
+    "description": "I have experience collaborating in development teams, coordinating deliveries, communicating progress, and supporting colleagues to achieve common goals in academic and institutional projects."
+  },
+  {
+    "key": "learning",
+    "icon": "📚",
+    "title": "Continuous Learning",
+    "subtitle": "Constant growth",
+    "description": "I stay updated with new technologies and best practices. Every project is an opportunity to incorporate new tools and improve how I write and organize code."
+  },
+  {
+    "key": "problem-solving",
+    "icon": "🧩",
+    "title": "Problem Solving",
+    "subtitle": "Analytical thinking",
+    "description": "I analyze problems from the root before implementing solutions. I rely on logic, documentation, and methodical debugging to find functional and sustainable answers."
+  },
+  {
+    "key": "quality",
+    "icon": "✅",
+    "title": "Attention to Quality",
+    "subtitle": "Clean and stable code",
+    "description": "I consider testing and documentation an integral part of any delivery. I strive to write maintainable, clear, and well-tested code from the first iteration."
+  }
+]

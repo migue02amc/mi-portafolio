@@ -1,114 +1,94 @@
 {
-  "title": "Your Name Here | Creative Portfolio",
-  "description": "Portfolio of a designer, developer, and creator. Browse work spanning web, visual design, 3D, video, and more — then reach out.",
-  "ogSiteName": "Portfolio",
-  "shortName": "FOLIO",
-  "tagline": "Designing experiences · Building products · Telling stories",
+  "title": "Miguel Ángel Morales Cruz | Ingeniero de Software",
+  "description": "Portafolio de Miguel Ángel Morales Cruz, ingeniero de software con experiencia en desarrollo móvil y web usando Kotlin, Java, PHP, Node.js y APIs RESTful.",
+  "ogSiteName": "Portafolio Profesional",
+  "shortName": "MAMC",
+  "tagline": "Desarrollo móvil y web · APIs · Calidad de software",
   "themeStorageKey": "portfolio-theme",
   "web3formsKey": "YOUR_WEB3FORMS_KEY_HERE",
   "footerAttribution": {
-    "builder": "Built with this open-source template",
-    "builderUrl": "https://github.com/your-github-handle",
-    "host": "Hosted on your platform of choice",
-    "hostUrl": "https://yourdomain.com"
+    "builder": "Desarrollado con Astro Portfolio Theme",
+    "builderUrl": "https://github.com/MiguelMorales2002",
+    "host": "Perfil técnico y proyectos personales",
+    "hostUrl": "https://github.com/MiguelMorales2002"
   },
   "retroTvCount": 21,
   "seoKeywords": [
-    "Creative Portfolio",
-    "Web Designer",
-    "Visual Artist",
-    "UI/UX Design",
-    "Front-End Developer",
-    "3D Artist",
-    "Motion Graphics",
-    "Brand Identity",
-    "Freelance Designer",
-    "Video Editor",
-    "Photography",
-    "Illustration",
-    "Digital Art",
-    "Graphic Design",
-    "Interactive Design",
-    "Product Design",
-    "Creative Direction",
-    "Art Direction",
-    "Full-Stack Developer",
-    "Animator",
-    "Typographer",
-    "Storyteller",
-    "Open to Work",
-    "Available for Projects",
-    "Design Systems",
-    "Visual Storytelling"
+    "Miguel Ángel Morales Cruz",
+    "Ingeniero de Software",
+    "Desarrollador Kotlin",
+    "Desarrollador Java",
+    "Desarrollador PHP",
+    "Node.js",
+    "APIs REST",
+    "Jetpack Compose",
+    "Clean Architecture",
+    "Room Database",
+    "React",
+    "Vite",
+    "JavaFX",
+    "gRPC",
+    "SQL Server",
+    "MySQL",
+    "Android",
+    "Portafolio de desarrollo"
   ],
   "navExternal": [
     {
-      "label": "Blog",
-      "desc": "Writing on design, process, and what I'm learning",
-      "personalKey": "blog",
-      "urlTemplate": "{value}"
-    },
-    {
       "label": "GitHub",
-      "desc": "Open-source work and side experiments",
+      "desc": "Repositorios y código fuente",
       "personalKey": "github",
       "urlTemplate": "https://github.com/{value}"
     },
     {
-      "label": "LinkedIn",
-      "desc": "Professional profile and recommendations",
-      "personalKey": "linkedin",
-      "urlTemplate": "https://linkedin.com/in/{value}"
-    },
-    {
       "label": "Email",
-      "desc": "Best way to reach me for project inquiries",
+      "desc": "Contacto directo para oportunidades",
       "personalKey": "email",
       "urlTemplate": "mailto:{value}"
     },
     {
-      "label": "Phone",
-      "desc": "Available for calls by appointment",
+      "label": "Teléfono",
+      "desc": "Disponible para entrevistas y colaboración",
       "personalKey": "phone",
       "urlTemplate": "tel:{value}"
     }
   ],
   "serviceSites": [
     {
-      "badge": "Client Work",
-      "badgeColor": "#6366f1",
-      "cardAccent": "#6366f1",
-      "glowColor": "rgba(99, 102, 241, 0.12)",
-      "iconBg": "rgba(99, 102, 241, 0.1)",
-      "iconBorder": "rgba(99, 102, 241, 0.18)",
+      "badge": "Proyecto Web",
+      "badgeColor": "#2563eb",
+      "cardAccent": "#2563eb",
+      "glowColor": "rgba(37, 99, 235, 0.14)",
+      "iconBg": "rgba(37, 99, 235, 0.1)",
+      "iconBorder": "rgba(37, 99, 235, 0.2)",
       "iconType": "web",
-      "name": "YourStudio.co",
-      "url": "https://yourstudio.co",
-      "description": "A dedicated space for client work — branding, web builds, campaigns, and everything in between. Full-service creative from concept through delivery, built on clear communication and no surprises.",
+      "name": "TicketPlus",
+      "url": "https://github.com/MiguelMorales2002",
+      "description": "Plataforma web de venta de boletos con módulos full-stack y consumo de APIs REST para flujo de información.",
       "features": [
-        "Brand Identity & Visual Systems",
-        "Web Design & Development",
-        "Campaign Creative & Direction"
+        "React + Vite en frontend",
+        "Node.js y APIs REST en backend",
+        "Integración con SQL Server"
       ],
-      "ctaText": "View Studio Work"
+      "ctaText": "Ver perfil en GitHub"
     },
     {
-      "badge": "Side Project",
-      "badgeColor": "#10b981",
-      "cardAccent": "#10b981",
-      "glowColor": "rgba(16, 185, 129, 0.15)",
-      "iconBg": "rgba(16, 185, 129, 0.1)",
-      "iconBorder": "rgba(16, 185, 129, 0.2)",
+      "badge": "Proyecto Multiplataforma",
+      "badgeColor": "#16a34a",
+      "cardAccent": "#16a34a",
+      "glowColor": "rgba(22, 163, 74, 0.14)",
+      "iconBg": "rgba(22, 163, 74, 0.1)",
+      "iconBorder": "rgba(22, 163, 74, 0.22)",
       "iconType": "server",
-      "name": "YourProject.io",
-      "url": "https://yourproject.io",
-      "description": "A personal project built to scratch an itch — self-hosted, self-managed, and entirely my own problem to maintain. Independent, opinionated, and shipped without a committee.",
+      "name": "Medidietas",
+      "url": "https://github.com/MiguelMorales2002",
+      "description": "Aplicación de nutrición con cálculo de macronutrientes y sincronización entre escritorio y móvil mediante APIs REST y gRPC.",
       "features": [
-        "Self-Hosted & Fully Independent",
-        "Iterating in Public",
-        "Built for One Person: Me"
+        "JavaFX + Android",
+        "Comunicación cliente-servidor",
+        "Persistencia en SQL"
       ],
-      "ctaText": "Check It Out"
+      "ctaText": "Ver perfil en GitHub"
     }
   ]
 }

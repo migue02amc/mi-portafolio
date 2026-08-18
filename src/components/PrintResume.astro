@@ -1,14 +1,30 @@
 ---
-import personal from '../data/personal.json';
-import skillsData from '../data/skills.json';
-import certsData from '../data/certifications.json';
-import expertiseFile from '../data/expertise.json';
-import projectsFile from '../data/projects.json';
+import personalEs from '../data/personal.json';
+import personalEn from '../data/en/personal.json';
+import skillsDataEs from '../data/skills.json';
+import skillsDataEn from '../data/en/skills.json';
+import certsDataEs from '../data/certifications.json';
+import certsDataEn from '../data/en/certifications.json';
+import expertiseFileEs from '../data/expertise.json';
+import expertiseFileEn from '../data/en/expertise.json';
+import projectsFileEs from '../data/projects.json';
+import projectsFileEn from '../data/en/projects.json';
+
+const isEn = Astro.url.pathname.startsWith('/en');
+const personal = isEn ? personalEn : personalEs;
+const skillsData = isEn ? skillsDataEn : skillsDataEs;
+const certsData = isEn ? certsDataEn : certsDataEs;
+const expertiseFile = isEn ? expertiseFileEn : expertiseFileEs;
+const projectsFile = isEn ? projectsFileEn : projectsFileEs;
 const expertiseData = expertiseFile.items;
 const resumeProjects = projectsFile.items.filter(p => (p as any).resume);
 
 const earnedCerts = certsData.filter(c => c.status === 'Earned');
 const inProgressCerts = certsData.filter(c => c.status !== 'Earned');
+const profileLinks = [
+  personal.linkedin ? `linkedin.com/in/${personal.linkedin}` : '',
+  personal.github ? `github.com/${personal.github}` : '',
+].filter(Boolean).join(' · ');
 ---
 
 <div class="print-only" id="resume-print">
@@ -21,7 +37,7 @@ const inProgressCerts = certsData.filter(c => c.status !== 'Earned');
     <div class="header-right">
       <div>{personal.email} · {personal.phone}</div>
       <div>{personal.location}</div>
-      <div>linkedin.com/in/{personal.linkedin} · github.com/{personal.github}</div>
+      {profileLinks && <div>{profileLinks}</div>}
     </div>
   </header>
 

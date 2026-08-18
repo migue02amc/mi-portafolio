@@ -1,5 +1,8 @@
 ---
-import projectsFile from '../data/projects.json';
+import projectsFileEs from '../data/projects.json';
+import projectsFileEn from '../data/en/projects.json';
+const isEn = Astro.url.pathname.startsWith('/en');
+const projectsFile = isEn ? projectsFileEn : projectsFileEs;
 import { augmentProjectsWithImages, type ProjectEntry } from '../lib/fetchGitHub';
 import { withBase } from '../lib/assetPath';
 
@@ -21,8 +24,8 @@ const categoryFilters = [...new Set(allProjectsData.map((p) => p.category))].map
 }));
 
 const filters = [
-  { label: 'Featured', value: 'featured' },
-  { label: 'All', value: 'all' },
+  { label: isEn ? 'Featured' : 'Destacados', value: 'featured' },
+  { label: isEn ? 'All' : 'Todos', value: 'all' },
   ...categoryFilters,
 ];
 
@@ -31,6 +34,7 @@ const projectsJson = JSON.stringify(
     ...p,
     sliderImage:   p.sliderImage   ? withBase(p.sliderImage)   : p.sliderImage,
     backgroundImage: p.backgroundImage ? withBase(p.backgroundImage) : p.backgroundImage,
+    images: (p as any).images ? (p as any).images.map((img: string) => withBase(img)) : []
   }))
 );
 ---
@@ -38,8 +42,8 @@ const projectsJson = JSON.stringify(
 <section id="projects" class="py-24 bg-slate-900/30" style="scroll-margin-top: 80px;">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-10 reveal">
-      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">My work</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Featured Projects</h2>
+      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">{isEn ? 'My work' : 'Mi trabajo'}</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">{isEn ? 'Featured Projects' : 'Proyectos Destacados'}</h2>
     </div>
 
     <div class="flex flex-wrap justify-center gap-2 mb-10 reveal" style="transition-delay:0.1s;">
@@ -142,7 +146,7 @@ const projectsJson = JSON.stringify(
                   </div>
                 )}
                 <span class="view-hint">
-                  <span class="view-hint-text">Click for link to project</span>
+                  <span class="view-hint-text">Ver detalles</span>
                   <svg
                     class="view-hint-arrow"
                     fill="none"
@@ -190,8 +194,14 @@ const projectsJson = JSON.stringify(
     </button>
 
     <div class="modal-hero" id="modal-hero">
+      <div id="carousel-slides" class="carousel-slides"></div>
+      <button id="carousel-prev" class="carousel-nav prev" aria-label="Anterior imagen" type="button">❮</button>
+      <button id="carousel-next" class="carousel-nav next" aria-label="Siguiente imagen" type="button">❯</button>
+      
       <div class="modal-hero-overlay"></div>
+      
       <div class="modal-hero-content">
+        <div id="carousel-dots" class="carousel-dots"></div>
         <div id="modal-category-badge" class="modal-cat-badge"></div>
         <h2 id="modal-title" class="modal-heading"></h2>
         <p id="modal-company" class="modal-company"></p>
@@ -211,7 +221,7 @@ const projectsJson = JSON.stringify(
             height={18}
             class="modal-link-icon"
           />
-          <span id="modal-link-text">View Project</span>
+          <span id="modal-link-text">Ver código / enlace</span>
           <svg class="modal-cta-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               stroke-linecap="round"
@@ -310,19 +320,68 @@ const projectsJson = JSON.stringify(
   const modalLink = document.getElementById('modal-link');
   const modalLinkTx = document.getElementById('modal-link-text');
   const modalNoLink = document.getElementById('modal-no-link');
+  
+  const carouselSlides = document.getElementById('carousel-slides');
+  const carouselDots = document.getElementById('carousel-dots');
+  const btnPrev = document.getElementById('carousel-prev');
+  const btnNext = document.getElementById('carousel-next');
+  let currentImages = [];
+  let currentSlide = 0;
+
+  function renderCarousel() {
+    carouselSlides.innerHTML = '';
+    carouselDots.innerHTML = '';
+    
+    if (currentImages.length === 0) {
+      modalHero.style.display = 'none';
+      return;
+    }
+    
+    modalHero.style.display = '';
+    btnPrev.style.display = currentImages.length > 1 ? 'flex' : 'none';
+    btnNext.style.display = currentImages.length > 1 ? 'flex' : 'none';
+
+    currentImages.forEach((img, i) => {
+      const slide = document.createElement('div');
+      slide.className = `carousel-slide ${i === currentSlide ? 'active' : ''}`;
+      slide.style.backgroundImage = `url('${img}')`;
+      carouselSlides.appendChild(slide);
+
+      if (currentImages.length > 1) {
+        const dot = document.createElement('div');
+        dot.className = `carousel-dot ${i === currentSlide ? 'active' : ''}`;
+        dot.onclick = (e) => { e.stopPropagation(); goToSlide(i); };
+        carouselDots.appendChild(dot);
+      }
+    });
+  }
+
+  function goToSlide(index) {
+    if (currentImages.length <= 1) return;
+    const slides = carouselSlides.children;
+    const dots = carouselDots.children;
+    
+    slides[currentSlide].classList.remove('active');
+    if (dots.length > 0) dots[currentSlide].classList.remove('active');
+    
+    currentSlide = index;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    
+    slides[currentSlide].classList.add('active');
+    if (dots.length > 0) dots[currentSlide].classList.add('active');
+  }
+
+  btnPrev.onclick = (e) => { e.stopPropagation(); goToSlide(currentSlide - 1); };
+  btnNext.onclick = (e) => { e.stopPropagation(); goToSlide(currentSlide + 1); };
 
   function openModal(idx) {
     const p = projects[idx];
     if (!p) return;
 
-    const img = p.backgroundImage || null;
-    if (img) {
-      modalHero.style.backgroundImage = `url('${img}')`;
-      modalHero.style.display = '';
-    } else {
-      modalHero.style.backgroundImage = '';
-      modalHero.style.display = 'none';
-    }
+    currentImages = p.images && p.images.length > 0 ? p.images : (p.backgroundImage ? [p.backgroundImage] : []);
+    currentSlide = 0;
+    renderCarousel();
 
     modalCat.textContent = p.category;
     modalTitle.textContent = p.title;
@@ -783,19 +842,80 @@ const projectsJson = JSON.stringify(
 
   .modal-hero {
     position: relative;
-    height: 220px;
-    background-size: cover;
-    background-position: top center;
+    height: 380px;
     background-color: var(--bg-section);
     flex-shrink: 0;
+    overflow: hidden;
+  }
+  .carousel-slides {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  .carousel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center top;
+  }
+  .carousel-slide.active {
+    opacity: 1;
+    z-index: 2;
+  }
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(15, 23, 42, 0.6);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.15);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s, transform 0.3s;
+    backdrop-filter: blur(4px);
+  }
+  .carousel-nav:hover {
+    background: rgba(99, 102, 241, 0.9);
+    transform: translateY(-50%) scale(1.1);
+  }
+  .carousel-nav.prev { left: 1rem; }
+  .carousel-nav.next { right: 1rem; }
+  
+  .carousel-dots {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    z-index: 10;
+  }
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  .carousel-dot.active {
+    background: white;
+    transform: scale(1.3);
   }
   .modal-hero-overlay {
     position: absolute;
     inset: 0;
+    z-index: 5;
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.15) 0%,
-      rgba(15, 23, 42, 0.85) 80%,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(15, 23, 42, 0.6) 70%,
       rgba(15, 23, 42, 1) 100%
     );
   }
@@ -805,6 +925,7 @@ const projectsJson = JSON.stringify(
     left: 0;
     right: 0;
     padding: 1.5rem 1.75rem 1.25rem;
+    z-index: 10;
   }
   .modal-cat-badge {
     display: inline-block;

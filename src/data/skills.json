@@ -1,64 +1,61 @@
 {
   "section": {
-    "eyebrow": "What I work with",
-    "heading": "Technical Arsenal"
+    "eyebrow": "Tecnologías y herramientas",
+    "heading": "Stack Técnico"
   },
   "categories": [
     {
-      "title": "Design & Illustration",
+      "title": "Lenguajes de Programación",
       "skills": [
-        { "name": "Figma",       "icon": "simple-icons:figma" },
-        { "name": "Photoshop",   "icon": "simple-icons:adobephotoshop" },
-        { "name": "Illustrator", "icon": "simple-icons:adobeillustrator" },
-        { "name": "Blender",     "icon": "simple-icons:blender" },
-        { "name": "Sketch",      "icon": "simple-icons:sketch" }
+        { "name": "Kotlin", "icon": "devicon:kotlin" },
+        { "name": "Java", "icon": "devicon:java" },
+        { "name": "PHP", "icon": "devicon:php" },
+        { "name": "JavaScript", "icon": "devicon:javascript" },
+        { "name": "C#", "icon": "devicon:csharp" }
       ]
     },
     {
-      "title": "Web & Frontend",
+      "title": "Frameworks y Librerías",
       "skills": [
-        { "name": "HTML5",      "icon": "simple-icons:html5" },
-        { "name": "CSS3",       "icon": "simple-icons:css3" },
-        { "name": "JavaScript", "icon": "simple-icons:javascript" },
-        { "name": "TypeScript", "icon": "simple-icons:typescript" },
-        { "name": "React",      "icon": "simple-icons:react" },
-        { "name": "Bootstrap",  "icon": "simple-icons:bootstrap" }
+        { "name": "Jetpack Compose", "icon": "simple-icons:jetpackcompose" },
+        { "name": "Node.js", "icon": "devicon:nodejs" },
+        { "name": "React", "icon": "devicon:react" },
+        { "name": "JavaFX", "icon": "mdi:language-java" },
+        { "name": "WPF (.NET)", "icon": "simple-icons:dotnet" }
       ]
     },
     {
-      "title": "Motion, 3D & Video",
+      "title": "APIs y Comunicación",
       "skills": [
-        { "name": "Three.js",     "icon": "simple-icons:threedotjs" },
-        { "name": "After Effects","icon": "simple-icons:adobeaftereffects" },
-        { "name": "Premiere Pro", "icon": "simple-icons:adobepremierepro" },
-        { "name": "Photoshop",    "icon": "simple-icons:adobephotoshop" }
+        { "name": "REST APIs", "icon": "mdi:api" },
+        { "name": "gRPC", "icon": "mdi:server-network" },
+        { "name": "Cliente-Servidor", "icon": "mdi:lan-connect" }
       ]
     },
     {
-      "title": "Platforms & Publishing",
+      "title": "Bases de Datos",
       "skills": [
-        { "name": "WordPress", "icon": "simple-icons:wordpress" },
-        { "name": "Drupal",    "icon": "simple-icons:drupal" },
-        { "name": "Hugo",      "icon": "simple-icons:hugo" },
-        { "name": "AWS",       "icon": "simple-icons:amazonaws" }
+        { "name": "MySQL", "icon": "devicon:mysql" },
+        { "name": "SQL Server", "icon": "devicon:microsoftsqlserver" },
+        { "name": "Room", "icon": "mdi:database" }
       ]
     },
     {
-      "title": "Dev & Workflow Tools",
+      "title": "Pruebas de Software",
       "skills": [
-        { "name": "Git",      "icon": "simple-icons:git" },
-        { "name": "GitHub",   "icon": "simple-icons:github" },
-        { "name": "Bash",     "icon": "simple-icons:gnubash" },
-        { "name": "Markdown", "icon": "simple-icons:markdown" }
+        { "name": "JUnit", "icon": "simple-icons:junit5" },
+        { "name": "MockK", "icon": "mdi:test-tube" },
+        { "name": "Selenium", "icon": "devicon:selenium" },
+        { "name": "Postman", "icon": "devicon:postman" },
+        { "name": "Planes de Prueba", "icon": "mdi:clipboard-check" }
       ]
     },
     {
-      "title": "Data & Infrastructure",
+      "title": "Herramientas de Desarrollo",
       "skills": [
-        { "name": "SQLite",     "icon": "simple-icons:sqlite" },
-        { "name": "Nginx",      "icon": "simple-icons:nginx" },
-        { "name": "Docker",     "icon": "simple-icons:docker" },
-        { "name": "Prometheus", "icon": "simple-icons:prometheus" }
+        { "name": "Android Studio", "icon": "devicon:androidstudio" },
+        { "name": "Git", "icon": "devicon:git" },
+        { "name": "GitHub", "icon": "devicon:github" }
       ]
     }
   ]

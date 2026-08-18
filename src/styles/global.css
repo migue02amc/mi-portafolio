@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-accent: rgb(99 102 241);
-  --color-highlight: rgb(14 165 233);
+  /* Paleta azul marino: marino profundo + acentos celestes y naranjas */
+  --color-accent: rgb(26 107 204);
+  --color-highlight: rgb(249 115 22);
 
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-float: float 6s ease-in-out infinite;
@@ -12,51 +14,51 @@
 @layer base {
   :root {
     color-scheme: dark;
-    --bg: #020617;
-    --bg-card: rgba(15, 23, 42, 0.65);
-    --bg-card-solid: #0f172a;
-    --bg-section: rgba(15, 23, 42, 0.4);
-    --bg-nav: rgba(2, 6, 23, 0.85);
-    --bg-overlay: rgba(2, 6, 23, 0.97);
-    --bg-input: rgba(15, 23, 42, 0.5);
-    --bg-surface: rgba(30, 41, 59, 0.5);
+    --bg: #020b18;
+    --bg-card: rgba(7, 19, 37, 0.72);
+    --bg-card-solid: #071325;
+    --bg-section: rgba(7, 19, 37, 0.45);
+    --bg-nav: rgba(2, 11, 24, 0.9);
+    --bg-overlay: rgba(2, 11, 24, 0.97);
+    --bg-input: rgba(14, 28, 48, 0.55);
+    --bg-surface: rgba(18, 38, 64, 0.55);
     --text: #e2e8f0;
     --text-muted: #94a3b8;
     --text-dim: #64748b;
     --text-dimmer: #475569;
     --border: rgba(255, 255, 255, 0.06);
-    --border-hover: rgba(99, 102, 241, 0.4);
-    --accent: #6366f1;
-    --accent-blue: #3b82f6;
-    --neon: #0ea5e9;
-    --neon-glow: rgba(14, 165, 233, 0.25);
-    --scrollbar-track: #0f172a;
-    --scrollbar-thumb: #334155;
-    --scrollbar-thumb-hover: #475569;
-    --footer-bg: rgba(2, 6, 23, 0.98);
+    --border-hover: rgba(26, 107, 204, 0.45);
+    --accent: #1a6bcc;
+    --accent-green: #60a5fa;
+    --neon: #f97316;
+    --neon-glow: rgba(249, 115, 22, 0.28);
+    --scrollbar-track: #020b18;
+    --scrollbar-thumb: #1e3a8a;
+    --scrollbar-thumb-hover: #1e40af;
+    --footer-bg: rgba(1, 6, 14, 0.98);
     --footer-border: rgba(255, 255, 255, 0.05);
   }
 
   [data-theme="light"] {
     color-scheme: light;
     --bg: #f8fafc;
-    --bg-card: rgba(255, 255, 255, 0.85);
+    --bg-card: rgba(255, 255, 255, 0.88);
     --bg-card-solid: #ffffff;
-    --bg-section: rgba(241, 245, 249, 0.8);
-    --bg-nav: rgba(248, 250, 252, 0.92);
+    --bg-section: rgba(241, 245, 249, 0.85);
+    --bg-nav: rgba(248, 250, 252, 0.94);
     --bg-overlay: rgba(248, 250, 252, 0.98);
-    --bg-input: rgba(241, 245, 249, 0.8);
-    --bg-surface: rgba(226, 232, 240, 0.8);
-    --text: #1e293b;
-    --text-muted: #475569;
-    --text-dim: #64748b;
-    --text-dimmer: #94a3b8;
+    --bg-input: rgba(226, 232, 240, 0.85);
+    --bg-surface: rgba(203, 213, 225, 0.85);
+    --text: #0f172a;
+    --text-muted: #334155;
+    --text-dim: #475569;
+    --text-dimmer: #64748b;
     --border: rgba(0, 0, 0, 0.07);
-    --border-hover: rgba(99, 102, 241, 0.4);
-    --accent: #4f46e5;
-    --accent-blue: #2563eb;
-    --neon: #0284c7;
-    --neon-glow: rgba(2, 132, 199, 0.2);
+    --border-hover: rgba(26, 107, 204, 0.45);
+    --accent: #2563eb;
+    --accent-green: #3b82f6;
+    --neon: #ea580c;
+    --neon-glow: rgba(234, 88, 12, 0.22);
     --scrollbar-track: #e2e8f0;
     --scrollbar-thumb: #94a3b8;
     --scrollbar-thumb-hover: #64748b;
@@ -65,12 +67,12 @@
   }
 
   body {
-    font-family: "Inter", sans-serif;
+    font-family: "Outfit", "Inter", sans-serif;
     background-color: var(--bg);
     color: var(--text);
     background-image:
-      radial-gradient(ellipse at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 60%),
-      radial-gradient(ellipse at 100% 100%, rgba(14, 165, 233, 0.15) 0%, transparent 60%);
+      radial-gradient(ellipse at 0% 0%, rgba(26, 107, 204, 0.18) 0%, transparent 60%),
+      radial-gradient(ellipse at 100% 100%, rgba(249, 115, 22, 0.15) 0%, transparent 60%);
     background-attachment: fixed;
     transition:
       background-color 0.3s ease,
@@ -116,12 +118,13 @@
   h5,
   h6 {
     text-wrap: balance;
+    font-family: "Outfit", "Inter", sans-serif;
   }
 
   [data-theme="light"] body {
     background-image:
-      radial-gradient(ellipse at 0% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
-      radial-gradient(ellipse at 100% 100%, rgba(14, 165, 233, 0.08) 0%, transparent 60%);
+      radial-gradient(ellipse at 0% 0%, rgba(37, 99, 235, 0.09) 0%, transparent 60%),
+      radial-gradient(ellipse at 100% 100%, rgba(234, 88, 12, 0.09) 0%, transparent 60%);
   }
 
   html {
@@ -151,26 +154,27 @@
 }
 
 @layer utilities {
+  /* Gradiente principal: celeste → naranja amanecer → azul cielo */
   .gradient-text {
-    background: linear-gradient(135deg, #6366f1 0%, #0ea5e9 50%, #a855f7 100%);
+    background: linear-gradient(135deg, #60a5fa 0%, #f97316 55%, #1a6bcc 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    animation: gradient-shift 5s linear infinite;
+    animation: gradient-shift 6s linear infinite;
   }
 
   [data-theme="light"] .gradient-text {
-    background: linear-gradient(135deg, #4f46e5 0%, #0284c7 50%, #7c3aed 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #ea580c 55%, #2563eb 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: gradient-shift 5s linear infinite;
+    animation: gradient-shift 6s linear infinite;
   }
 
   .section-title {
-    background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);
+    background: linear-gradient(135deg, #e8f0ea 0%, #8faa94 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -178,7 +182,7 @@
   }
 
   [data-theme="light"] .section-title {
-    background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+    background: linear-gradient(135deg, #1a2e1e 0%, #3d6443 100%);
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -191,9 +195,10 @@
     display: inline-block;
     position: relative;
     padding: 0.875rem 2rem;
-    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    background: linear-gradient(135deg, #1a6bcc, #f97316);
     border-radius: 0.5rem;
     font-weight: 600;
+    font-family: "Outfit", sans-serif;
     color: #fff;
     transition:
       box-shadow 0.3s ease,
@@ -202,20 +207,21 @@
   .btn-primary:focus-visible {
     outline: 2px solid #fff;
     outline-offset: 3px;
-    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 0 4px rgba(26, 107, 204, 0.4);
   }
 
   .btn-primary:hover {
-    box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 35px rgba(26, 107, 204, 0.55);
     transform: translateY(-2px);
   }
 
   .btn-secondary {
     display: inline-block;
     padding: 0.875rem 2rem;
-    border: 1.5px solid rgba(99, 102, 241, 0.4);
+    border: 1.5px solid rgba(26, 107, 204, 0.4);
     border-radius: 0.5rem;
     font-weight: 600;
+    font-family: "Outfit", sans-serif;
     color: var(--text);
     transition:
       border-color 0.3s ease,
@@ -228,18 +234,18 @@
   }
 
   .btn-secondary:hover {
-    border-color: #6366f1;
-    background: rgba(99, 102, 241, 0.12);
+    border-color: #1a6bcc;
+    background: rgba(26, 107, 204, 0.12);
     transform: translateY(-2px);
   }
 
   .card,
   .card.cert-in-progress {
     background: var(--bg-card);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--border);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border-radius: 0.75rem;
     padding: 1.5rem;
     transition:
@@ -250,7 +256,7 @@
 
   .card:hover {
     border-color: var(--border-hover);
-    box-shadow: 0 8px 40px rgba(99, 102, 241, 0.12);
+    box-shadow: 0 8px 40px rgba(26, 107, 204, 0.14);
   }
 
   [data-theme="light"] .card,
@@ -260,8 +266,8 @@
 
   .glass-nav {
     background: var(--bg-nav);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     transition:
       background 0.3s ease,
@@ -276,6 +282,7 @@
     letter-spacing: 0.01em;
     transition: color 0.25s;
     padding-bottom: 4px;
+    font-family: "Outfit", sans-serif;
   }
 
   .nav-link::after {
@@ -285,7 +292,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #6366f1, #0ea5e9);
+    background: linear-gradient(90deg, #1a6bcc, #f97316);
     transition: width 0.3s ease;
     border-radius: 1px;
   }
@@ -324,9 +331,9 @@
   .tag {
     display: inline-block;
     padding: 0.25rem 0.75rem;
-    background: rgba(99, 102, 241, 0.1);
-    border: 1px solid rgba(99, 102, 241, 0.25);
-    color: #a5b4fc;
+    background: rgba(26, 107, 204, 0.1);
+    border: 1px solid rgba(26, 107, 204, 0.28);
+    color: #60a5fa;
     border-radius: 9999px;
     font-size: 0.7rem;
     font-weight: 500;
@@ -334,9 +341,9 @@
   }
 
   [data-theme="light"] .tag {
-    color: #4338ca;
-    background: rgba(67, 56, 202, 0.08);
-    border-color: rgba(67, 56, 202, 0.25);
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.08);
+    border-color: rgba(37, 99, 235, 0.28);
   }
 
   .gradient-divider {
@@ -344,8 +351,8 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(99, 102, 241, 0.5),
-      rgba(14, 165, 233, 0.5),
+      rgba(26, 107, 204, 0.5),
+      rgba(249, 115, 22, 0.5),
       transparent
     );
     border: none;
@@ -388,6 +395,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes timeline-line-grow {
+  from { height: 0; }
+  to { height: 100%; }
+}
+
+@keyframes lang-bar-fill {
+  from { width: 0%; }
+  to { width: var(--lang-pct); }
 }
 
 body.page-hidden * {
@@ -439,19 +456,19 @@ body.page-hidden * {
 }
 
 [data-theme="light"] #about {
-  background-color: #fcfcfc;
+  background-color: #f0f5f1;
 }
 
 [data-theme="light"] #projects {
-  background-color: #dbdfee;
+  background-color: #ddeade;
 }
 
 [data-theme="light"] .text-slate-300 {
-  color: rgb(80, 80, 102);
+  color: rgb(60, 90, 68);
 }
 
 [data-theme="light"] .text-white {
-  color: rgb(106, 106, 106);
+  color: rgb(26, 46, 30);
 }
 
 [data-theme="light"] .cert-in-progress {

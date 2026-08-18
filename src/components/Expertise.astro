@@ -1,5 +1,8 @@
 ---
-import expertiseFile from '../data/expertise.json';
+import expertiseFileEs from '../data/expertise.json';
+import expertiseFileEn from '../data/en/expertise.json';
+const isEn = Astro.url.pathname.startsWith('/en');
+const expertiseFile = isEn ? expertiseFileEn : expertiseFileEs;
 import { icons } from '../lib/icons';
 
 type ExpertiseItem = {
@@ -16,8 +19,8 @@ const expertiseData = expertiseFile.items as ExpertiseItem[];
 <section id="expertise" class="py-20" style="scroll-margin-top: 80px;">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-14 reveal">
-      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">What I do</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Expertise</h2>
+      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">{isEn ? 'What I Do' : 'Lo que hago'}</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">{isEn ? 'Expertise' : 'Especialidades'}</h2>
     </div>
 
     <div class="expertise-grid max-w-6xl mx-auto">

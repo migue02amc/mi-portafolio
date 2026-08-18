@@ -1,0 +1,94 @@
+{
+  "title": "Miguel Ángel Morales Cruz | Software Engineer",
+  "description": "Portfolio of Miguel Ángel Morales Cruz, software engineer with experience in mobile and web development using Kotlin, Java, PHP, Node.js, and RESTful APIs.",
+  "ogSiteName": "Professional Portfolio",
+  "shortName": "MAMC",
+  "tagline": "Mobile and Web Development · APIs · Software Quality",
+  "themeStorageKey": "portfolio-theme",
+  "web3formsKey": "YOUR_WEB3FORMS_KEY_HERE",
+  "footerAttribution": {
+    "builder": "Built with Astro Portfolio Theme",
+    "builderUrl": "https://github.com/MiguelMorales2002",
+    "host": "Technical profile and personal projects",
+    "hostUrl": "https://github.com/MiguelMorales2002"
+  },
+  "retroTvCount": 21,
+  "seoKeywords": [
+    "Miguel Ángel Morales Cruz",
+    "Software Engineer",
+    "Kotlin Developer",
+    "Java Developer",
+    "PHP Developer",
+    "Node.js",
+    "REST APIs",
+    "Jetpack Compose",
+    "Clean Architecture",
+    "Room Database",
+    "React",
+    "Vite",
+    "JavaFX",
+    "gRPC",
+    "SQL Server",
+    "MySQL",
+    "Android",
+    "Development Portfolio"
+  ],
+  "navExternal": [
+    {
+      "label": "GitHub",
+      "desc": "Repositories and source code",
+      "personalKey": "github",
+      "urlTemplate": "https://github.com/{value}"
+    },
+    {
+      "label": "Email",
+      "desc": "Direct contact for opportunities",
+      "personalKey": "email",
+      "urlTemplate": "mailto:{value}"
+    },
+    {
+      "label": "Phone",
+      "desc": "Available for interviews and collaboration",
+      "personalKey": "phone",
+      "urlTemplate": "tel:{value}"
+    }
+  ],
+  "serviceSites": [
+    {
+      "badge": "Web Project",
+      "badgeColor": "#2563eb",
+      "cardAccent": "#2563eb",
+      "glowColor": "rgba(37, 99, 235, 0.14)",
+      "iconBg": "rgba(37, 99, 235, 0.1)",
+      "iconBorder": "rgba(37, 99, 235, 0.2)",
+      "iconType": "web",
+      "name": "TicketPlus",
+      "url": "https://github.com/MiguelMorales2002",
+      "description": "Web ticketing platform with full-stack modules and REST API consumption for information flow.",
+      "features": [
+        "React + Vite on frontend",
+        "Node.js and REST APIs on backend",
+        "Integration with SQL Server"
+      ],
+      "ctaText": "View profile on GitHub"
+    },
+    {
+      "badge": "Multiplatform Project",
+      "badgeColor": "#16a34a",
+      "cardAccent": "#16a34a",
+      "glowColor": "rgba(22, 163, 74, 0.14)",
+      "iconBg": "rgba(22, 163, 74, 0.1)",
+      "iconBorder": "rgba(22, 163, 74, 0.22)",
+      "iconType": "server",
+      "name": "Medidietas",
+      "url": "https://github.com/MiguelMorales2002",
+      "description": "Nutrition application with macronutrient calculation and synchronization between desktop and mobile via REST APIs and gRPC.",
+      "features": [
+        "JavaFX + Android",
+        "Client-server communication",
+        "SQL persistence"
+      ],
+      "ctaText": "View profile on GitHub"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "key": "mobile-dev",
+      "icon": "device-phone-mobile",
+      "title": "Android Mobile Development",
+      "description": "Migration and evolution of Android applications with Jetpack Compose, Clean Architecture, and local persistence with Room. Experience in declarative development and modern architectures."
+    },
+    {
+      "key": "frontend",
+      "icon": "computer-desktop",
+      "title": "Frontend Development",
+      "description": "Building responsive and dynamic web interfaces with React and JavaScript, focused on user experience, performance, and REST API integration."
+    },
+    {
+      "key": "web-backend",
+      "icon": "code-bracket-square",
+      "title": "Backend Development",
+      "description": "Implementation of modules and server logic in PHP and Node.js, integration of relational databases (MySQL, SQL Server), and RESTful API design."
+    },
+    {
+      "key": "quality",
+      "icon": "clipboard-document-check",
+      "title": "Software Testing",
+      "description": "Design and execution of functional test plans to validate deliveries, document results, and ensure system stability before and after each change."
+    }
+  ]
+}

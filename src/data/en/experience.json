@@ -1,0 +1,46 @@
+[
+  {
+    "period": "03/2026 – 06/2026",
+    "title": "Android Mobile Development Intern",
+    "company": "Directorate of IT Development for Academic Support",
+    "institution": "Universidad Veracruzana",
+    "location": "Xalapa, Veracruz",
+    "type": "internship",
+    "icon": "device-phone-mobile",
+    "achievements": [
+      "Executed the migration of the institutional Eminus app to declarative UI with Jetpack Compose, implementing Clean Architecture and Room for local persistence.",
+      "Developed and executed software test plans with JUnit and MockK to document and ensure system stability after the technological transition.",
+      "Technologies: Kotlin, Jetpack Compose, Clean Architecture, Room, JUnit, MockK, Android Studio."
+    ],
+    "tags": ["Kotlin", "Jetpack Compose", "Room", "JUnit", "MockK", "Android Studio"]
+  },
+  {
+    "period": "08/2025 – 02/2026",
+    "title": "Software Developer (Social Service)",
+    "company": "Faculty of Statistics and Informatics",
+    "institution": "Universidad Veracruzana",
+    "location": "Xalapa, Veracruz",
+    "type": "social-service",
+    "icon": "code-bracket-square",
+    "achievements": [
+      "Developed new features and resolved defects in legacy code for the Institutional Tutoring Management System.",
+      "Designed and applied functional test plans for the validation of each system delivery.",
+      "Technologies: PHP, MySQL, Functional Test Plans."
+    ],
+    "tags": ["PHP", "MySQL", "Test Plans", "Maintenance"]
+  },
+  {
+    "period": "02/2022 – 06/2026",
+    "title": "B.S. in Software Engineering",
+    "company": "Universidad Veracruzana",
+    "institution": "",
+    "location": "Xalapa, Veracruz",
+    "type": "education",
+    "icon": "academic-cap",
+    "achievements": [
+      "Professional training in software development, application architecture, and quality assurance.",
+      "Academic projects: TicketPlus (web platform), Medidietas (multiplatform app), S.A.M.S. (desktop system)."
+    ],
+    "tags": ["Software Engineering", "Architecture", "QA", "Universidad Veracruzana"]
+  }
+]

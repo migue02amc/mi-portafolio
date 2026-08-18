@@ -1,5 +1,8 @@
 ---
-import skillsData from '../data/skills.json';
+import skillsDataEs from '../data/skills.json';
+import skillsDataEn from '../data/en/skills.json';
+const isEn = Astro.url.pathname.startsWith('/en');
+const skillsData = isEn ? skillsDataEn : skillsDataEs;
 import { withBase } from '../lib/assetPath';
 
 const { section, categories } = skillsData;

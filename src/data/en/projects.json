@@ -1,0 +1,76 @@
+{
+  "layout": "grid",
+  "items": [
+    {
+      "title": "S.A.M.S.",
+      "featured": true,
+      "company": "Supermarket Administration System",
+      "category": "Desktop / ERP",
+      "description": "Comprehensive ERP and Point of Sale (POS) IT system to manage inventory, cashier, purchases, and sales in real time. Supports up to 8 simultaneous cash registers. Optimized interface for touch and traditional use.",
+      "tags": ["C#", "WPF (.NET)", "SQL Server", "Clean Architecture", "Iconix", "SHA-256"],
+      "icon": "computer-desktop",
+      "backgroundImage": "/images/projects/sams/1.png",
+      "images": [
+        "/images/projects/sams/1.png",
+        "/images/projects/sams/2.png",
+        "/images/projects/sams/3.png",
+        "/images/projects/sams/4.png",
+        "/images/projects/sams/5.png"
+      ],
+      "link": ""
+    },
+    {
+      "title": "MediDietas",
+      "featured": true,
+      "company": "Multiplatform System",
+      "category": "Mobile & Desktop",
+      "description": "Comprehensive platform connecting patients with nutritionists for diet and calorie tracking. Microservices architecture with a Node.js backend, native Android mobile client, and JavaFX desktop client.",
+      "tags": ["Java (Android)", "JavaFX", "Node.js", "MySQL", "gRPC", "Docker", "REST API", "Jest"],
+      "icon": "device-phone-mobile",
+      "backgroundImage": "/images/projects/medidietas/1.png",
+      "images": [
+        "/images/projects/medidietas/1.png",
+        "/images/projects/medidietas/2.png",
+        "/images/projects/medidietas/3.png",
+        "/images/projects/medidietas/4.png"
+      ],
+      "link": ""
+    },
+    {
+      "title": "TicketPlus",
+      "featured": true,
+      "company": "E-Commerce Platform",
+      "category": "Web",
+      "description": "Scalable web platform for selling and managing electronic tickets (e-tickets) for events. Focused on high concurrency, accessible UX, and strict authentication flows.",
+      "tags": ["React", "JavaScript", "Node.js", "MySQL", "REST API", "JWT", "IWEB Design"],
+      "icon": "globe-alt",
+      "backgroundImage": "/images/projects/ticketplus/1.jpg",
+      "images": [
+        "/images/projects/ticketplus/1.jpg",
+        "/images/projects/ticketplus/2.jpg",
+        "/images/projects/ticketplus/3.jpg",
+        "/images/projects/ticketplus/4.jpg",
+        "/images/projects/ticketplus/5.jpg"
+      ],
+      "link": ""
+    },
+    {
+      "title": "Hangman.NET",
+      "featured": true,
+      "company": "Multiplayer Video Game",
+      "category": "Desktop / Network",
+      "description": "Real-time multiplayer game of the classic hangman. Client-Server architecture implementation using Windows Communication Foundation and TCP Sockets.",
+      "tags": ["C#", "WPF", "SQL Server", "WCF", "TCP Sockets", "IIS Express", "LINQ"],
+      "icon": "puzzle-piece",
+      "backgroundImage": "/images/projects/hangman/1.png",
+      "images": [
+        "/images/projects/hangman/1.png",
+        "/images/projects/hangman/2.png",
+        "/images/projects/hangman/3.png",
+        "/images/projects/hangman/4.png",
+        "/images/projects/hangman/5.png"
+      ],
+      "link": ""
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "section": {
+    "eyebrow": "Technologies and tools",
+    "heading": "Tech Stack"
+  },
+  "categories": [
+    {
+      "title": "Programming Languages",
+      "skills": [
+        { "name": "Kotlin", "icon": "devicon:kotlin" },
+        { "name": "Java", "icon": "devicon:java" },
+        { "name": "PHP", "icon": "devicon:php" },
+        { "name": "JavaScript", "icon": "devicon:javascript" },
+        { "name": "C#", "icon": "devicon:csharp" }
+      ]
+    },
+    {
+      "title": "Frameworks and Libraries",
+      "skills": [
+        { "name": "Jetpack Compose", "icon": "simple-icons:jetpackcompose" },
+        { "name": "Node.js", "icon": "devicon:nodejs" },
+        { "name": "React", "icon": "devicon:react" },
+        { "name": "JavaFX", "icon": "mdi:language-java" },
+        { "name": "WPF (.NET)", "icon": "simple-icons:dotnet" }
+      ]
+    },
+    {
+      "title": "APIs and Communication",
+      "skills": [
+        { "name": "REST APIs", "icon": "mdi:api" },
+        { "name": "gRPC", "icon": "mdi:server-network" },
+        { "name": "Client-Server", "icon": "mdi:lan-connect" }
+      ]
+    },
+    {
+      "title": "Databases",
+      "skills": [
+        { "name": "MySQL", "icon": "devicon:mysql" },
+        { "name": "SQL Server", "icon": "devicon:microsoftsqlserver" },
+        { "name": "Room", "icon": "mdi:database" }
+      ]
+    },
+    {
+      "title": "Software Testing",
+      "skills": [
+        { "name": "JUnit", "icon": "simple-icons:junit5" },
+        { "name": "MockK", "icon": "mdi:test-tube" },
+        { "name": "Selenium", "icon": "devicon:selenium" },
+        { "name": "Postman", "icon": "devicon:postman" },
+        { "name": "Test Plans", "icon": "mdi:clipboard-check" }
+      ]
+    },
+    {
+      "title": "Development Tools",
+      "skills": [
+        { "name": "Android Studio", "icon": "devicon:androidstudio" },
+        { "name": "Git", "icon": "devicon:git" },
+        { "name": "GitHub", "icon": "devicon:github" }
+      ]
+    }
+  ]
+}

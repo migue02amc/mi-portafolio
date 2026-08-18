@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "label": "About Me",
+      "shortLabel": "About Me",
+      "href": "#about",
+      "desc": "Get to know my profile, interests, and skills"
+    },
+    {
+      "label": "Experience",
+      "shortLabel": "Experience",
+      "href": "#experience",
+      "desc": "My professional and academic path"
+    },
+    {
+      "label": "What I Do",
+      "shortLabel": "What I Do",
+      "href": "#expertise",
+      "desc": "Areas of expertise and focus"
+    },
+    {
+      "label": "Skills",
+      "shortLabel": "Skills",
+      "href": "#skills",
+      "desc": "Technologies and tools I use"
+    },
+    {
+      "label": "Projects",
+      "shortLabel": "Projects",
+      "href": "#projects",
+      "desc": "Developed projects"
+    },
+    {
+      "label": "Education",
+      "shortLabel": "Education",
+      "href": "#certifications",
+      "desc": "Education and professional development"
+    },
+    {
+      "label": "Soft Skills",
+      "shortLabel": "Skills",
+      "href": "#values",
+      "desc": "My interpersonal skills"
+    },
+    {
+      "label": "Contact",
+      "shortLabel": "Contact",
+      "href": "#contact",
+      "desc": "Let's talk about your next project"
+    }
+  ]
+}

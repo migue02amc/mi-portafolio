@@ -1,0 +1,46 @@
+[
+  {
+    "period": "03/2026 – 06/2026",
+    "title": "Practicante de Desarrollo Móvil en Android",
+    "company": "Dirección de Desarrollo Informático de Apoyo Académico",
+    "institution": "Universidad Veracruzana",
+    "location": "Xalapa, Veracruz",
+    "type": "internship",
+    "icon": "device-phone-mobile",
+    "achievements": [
+      "Ejecuté la migración de la app institucional Eminus a modelos declarativos con Jetpack Compose, implementando Clean Architecture y Room para la persistencia local.",
+      "Desarrollé y ejecuté planes de prueba de software con JUnit y MockK para documentar y garantizar la estabilidad del sistema tras la transición tecnológica.",
+      "Tecnologías: Kotlin, Jetpack Compose, Clean Architecture, Room, JUnit, MockK, Android Studio."
+    ],
+    "tags": ["Kotlin", "Jetpack Compose", "Room", "JUnit", "MockK", "Android Studio"]
+  },
+  {
+    "period": "08/2025 – 02/2026",
+    "title": "Desarrollador de Software (Servicio Social)",
+    "company": "Facultad de Estadística e Informática",
+    "institution": "Universidad Veracruzana",
+    "location": "Xalapa, Veracruz",
+    "type": "social-service",
+    "icon": "code-bracket-square",
+    "achievements": [
+      "Desarrollé nuevas funcionalidades y resolví defectos en código heredado para el Sistema Institucional de Gestión de Tutorías.",
+      "Diseñé y apliqué planes de prueba funcionales para la validación de cada entrega del sistema.",
+      "Tecnologías: PHP, MySQL, Planes de Prueba funcionales."
+    ],
+    "tags": ["PHP", "MySQL", "Planes de Prueba", "Mantenimiento"]
+  },
+  {
+    "period": "02/2022 – 06/2026",
+    "title": "Licenciatura en Ingeniería de Software",
+    "company": "Universidad Veracruzana",
+    "institution": "",
+    "location": "Xalapa, Veracruz",
+    "type": "education",
+    "icon": "academic-cap",
+    "achievements": [
+      "Formación profesional en desarrollo de software, arquitectura de aplicaciones y aseguramiento de calidad.",
+      "Proyectos académicos: TicketPlus (plataforma web), Medidietas (app multiplataforma), S.A.M.S. (sistema de escritorio)."
+    ],
+    "tags": ["Ingeniería de Software", "Arquitectura", "Calidad", "Universidad Veracruzana"]
+  }
+]

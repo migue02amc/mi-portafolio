@@ -176,12 +176,14 @@ export interface ProjectEntry {
 // Singleton promise: Astro evaluates Hero.astro and Projects.astro in the same build pass.
 // Both call augmentProjectsWithImages — memoizing here avoids duplicate GitHub API calls
 // and a race condition where two parallel writes could corrupt the on-disk cache.
-let _buildResult: Promise<ProjectEntry[]> | null = null;
+let _buildResult = new Map<string, Promise<ProjectEntry[]>>();
 
 export async function augmentProjectsWithImages(projects: ProjectEntry[]): Promise<ProjectEntry[]> {
-  if (_buildResult) return _buildResult;
-  _buildResult = _doAugment(projects);
-  return _buildResult;
+  const key = JSON.stringify(projects.map(p => p.title));
+  if (_buildResult.has(key)) return _buildResult.get(key)!;
+  const p = _doAugment(projects);
+  _buildResult.set(key, p);
+  return p;
 }
 
 async function _doAugment(projects: ProjectEntry[]): Promise<ProjectEntry[]> {

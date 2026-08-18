@@ -1,5 +1,8 @@
 ---
-import certificationsData from '../data/certifications.json';
+import certificationsDataEs from '../data/certifications.json';
+import certificationsDataEn from '../data/en/certifications.json';
+const isEn = Astro.url.pathname.startsWith('/en');
+const certificationsData = isEn ? certificationsDataEn : certificationsDataEs;
 
 type CertType = 'certification' | 'professional-development' | 'in-progress';
 
@@ -28,17 +31,17 @@ function cardModClass(type: CertType) {
 <section id="certifications" class="py-24" style="scroll-margin-top: 80px;">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 reveal">
-      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">Credentials</p>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Certifications</h2>
+      <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">{isEn ? 'Education and development' : 'Educación y desarrollo'}</p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">{isEn ? 'Education & Credentials' : 'Formación & Credenciales'}</h2>
       <div class="flex flex-wrap items-center justify-center gap-4 mt-5">
         <span class="legend-item">
-          <span class="legend-dot dot-earned"></span>Certification
+          <span class="legend-dot dot-earned"></span>{isEn ? 'Education' : 'Educación'}
         </span>
         <span class="legend-item">
-          <span class="legend-dot dot-pro-dev"></span>Professional Development
+          <span class="legend-dot dot-pro-dev"></span>{isEn ? 'Professional Development' : 'Desarrollo Profesional'}
         </span>
         <span class="legend-item">
-          <span class="legend-dot dot-in-progress"></span>In Progress
+          <span class="legend-dot dot-in-progress"></span>{isEn ? 'In Progress' : 'En Curso'}
         </span>
       </div>
     </div>
@@ -69,7 +72,7 @@ function cardModClass(type: CertType) {
                   class={`text-xs font-semibold uppercase tracking-wider ${type === 'professional-development' ? 'text-amber-500/70' : type === 'in-progress' ? 'text-blue-400/80' : 'text-accent'}`}
                 >
                   {cert.issuer}
-                  {type === 'professional-development' && <span class="issuer-tag">Course</span>}
+                  {type === 'professional-development' && <span class="issuer-tag">{isEn ? 'Pro Dev' : 'Desarrollo Prof.'}</span>}
                 </p>
 
                 <p class="text-slate-400 text-sm leading-relaxed">{cert.description}</p>
@@ -80,7 +83,7 @@ function cardModClass(type: CertType) {
                   {type === 'in-progress' ? (
                     <span class="in-progress-label">
                       <span class="ip-pulse" />
-                      Actively Studying
+                      {isEn ? 'Actively studying' : 'Estudiando activamente'}
                     </span>
                   ) : cert.credentialUrl ? (
                     <a
@@ -91,8 +94,8 @@ function cardModClass(type: CertType) {
                     >
                       <span>
                         {type === 'professional-development'
-                          ? 'View Certificate'
-                          : 'View Credential'}
+                          ? (isEn ? 'View Certificate' : 'Ver Certificado')
+                          : (isEn ? 'View Credential' : 'Ver Credencial')}
                       </span>
                       <svg
                         class="w-3.5 h-3.5"
@@ -109,7 +112,9 @@ function cardModClass(type: CertType) {
                       </svg>
                     </a>
                   ) : (
-                    <span class="text-slate-700 text-xs italic">No link available</span>
+                    <span class="text-xs text-slate-500 font-medium italic">
+                      {isEn ? 'No link available' : 'Sin enlace disponible'}
+                    </span>
                   )}
                 </div>
               </div>

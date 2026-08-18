@@ -1,5 +1,8 @@
 ---
-import projectsData from '../data/projects.json';
+import projectsDataEs from '../data/projects.json';
+import projectsDataEn from '../data/en/projects.json';
+const isEn = Astro.url.pathname.startsWith('/en');
+const projectsData = isEn ? projectsDataEn : projectsDataEs;
 import ProjectsGrid from './ProjectsGrid.astro';
 import ProjectsShowcase from './ProjectsShowcase.astro';
 ---

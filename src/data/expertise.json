@@ -1,28 +1,28 @@
 {
   "items": [
     {
-      "key": "sysadmin",
-      "icon": "server-stack",
-      "title": "Design & Art Direction",
-      "description": "Visual identity, layout, typography, and the aesthetic decisions that make people stop and look twice. Whether print or screen, the goal is the same — work that holds up."
+      "key": "mobile-dev",
+      "icon": "device-phone-mobile",
+      "title": "Desarrollo Móvil Android",
+      "description": "Migración y evolución de aplicaciones Android con Jetpack Compose, Clean Architecture y persistencia local con Room. Experiencia en desarrollo declarativo y arquitecturas modernas."
     },
     {
-      "key": "webdev",
+      "key": "frontend",
+      "icon": "computer-desktop",
+      "title": "Desarrollo Frontend",
+      "description": "Construcción de interfaces web responsivas y dinámicas con React y JavaScript, enfocadas en la experiencia de usuario, el rendimiento y la integración con APIs REST."
+    },
+    {
+      "key": "web-backend",
       "icon": "code-bracket-square",
-      "title": "Web Design & Development",
-      "description": "From wireframe to deployment — building sites and apps that look considered, perform well, and give visitors exactly what they came for."
+      "title": "Desarrollo Backend",
+      "description": "Implementación de módulos y lógica de servidor en PHP y Node.js, integración de bases de datos relacionales (MySQL, SQL Server) y diseño de APIs RESTful."
     },
     {
-      "key": "freelance",
-      "icon": "user-circle",
-      "title": "Creative Freelance",
-      "description": "Independent project work in photography, video, 3D, illustration, or wherever the brief leads. Direct to work with, flexible, and invested in the outcome."
-    },
-    {
-      "key": "leadership",
-      "icon": "users",
-      "title": "Collaboration & Direction",
-      "description": "Working alongside teams, clients, and stakeholders to take a project from idea to shipped — clear communication, honest timelines, and work that actually gets done."
+      "key": "quality",
+      "icon": "clipboard-document-check",
+      "title": "Pruebas de Software",
+      "description": "Diseño y ejecución de planes de prueba funcionales para validar entregas, documentar resultados y garantizar la estabilidad del sistema antes y después de cada cambio."
     }
   ]
 }

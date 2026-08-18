@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Android Mobile Development Intern (Eminus)",
+    "issuer": "Directorate of IT Development for Academic Support, Universidad Veracruzana",
+    "date": "03/2026 - 06/2026 · Xalapa, Veracruz",
+    "status": "Completed",
+    "type": "professional-development",
+    "description": "Migration of the institutional Eminus app to Jetpack Compose, implementing Clean Architecture and Room. Designed and executed test plans to document and guarantee system stability.",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Software Developer (Social Service)",
+    "issuer": "Faculty of Statistics and Informatics, Universidad Veracruzana",
+    "date": "08/2025 - 02/2026 · Xalapa, Veracruz",
+    "status": "Completed",
+    "type": "professional-development",
+    "description": "Development of new features and bug fixes in legacy code for the Institutional Tutoring Management System (PHP and MySQL). Also designed and applied test plans for delivery validation.",
+    "credentialUrl": ""
+  },
+  {
+    "name": "B.S. in Software Engineering",
+    "issuer": "Universidad Veracruzana",
+    "date": "06/2026 · Xalapa, Veracruz",
+    "status": "Completed",
+    "type": "certification",
+    "description": "Professional training focused on software development, application architecture, system integration, and quality assurance.",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Technical Bachelor in Accounting",
+    "issuer": "Plantel Conalep 153",
+    "date": "08/2017 - 06/2020 · Teziutlán, Puebla",
+    "status": "Completed",
+    "type": "professional-development",
+    "description": "Technical training in administrative and accounting processes, strengthening analytical and organizational skills for software projects.",
+    "credentialUrl": ""
+  }
+]
