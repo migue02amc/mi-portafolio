@@ -108,7 +108,8 @@
         "/images/projects/hangman/4.png",
         "/images/projects/hangman/5.png"
       ],
-      "link": ""
+      "link": "https://github.com/alcrivico/Hangman.NET",
+      "linkText": "View on GitHub"
     }
   ]
 }
