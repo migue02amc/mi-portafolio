@@ -18,12 +18,12 @@
     "credentialUrl": ""
   },
   {
-    "name": "Technical Bachelor in Accounting",
+    "name": "PTB in Accounting",
     "issuer": "Plantel Conalep 153",
     "date": "08/2017 - 06/2020 · Teziutlán, Puebla",
     "status": "Completed",
-    "type": "professional-development",
-    "description": "Technical training in administrative and accounting processes, strengthening analytical and organizational skills for software projects.",
+    "type": "certification",
+    "description": "Technical degree completed during high school, focused on administrative processes and basic accounting.",
     "credentialUrl": ""
   }
 ]

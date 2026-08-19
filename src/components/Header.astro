@@ -35,10 +35,10 @@ const external = siteData.navExternal
         {personalData.name}
       </a>
 
-      <div class="hidden lg:flex items-center gap-6">
+      <div class="hidden lg:flex items-center gap-3 xl:gap-6">
         {
           sections.map((item) => (
-            <a href={item.href} class="nav-link nav-link-sm">
+            <a href={item.href} class="nav-link text-sm xl:text-base">
               {item.shortLabel}
             </a>
           ))
