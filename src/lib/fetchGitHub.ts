@@ -179,7 +179,7 @@ export interface ProjectEntry {
 let _buildResult = new Map<string, Promise<ProjectEntry[]>>();
 
 export async function augmentProjectsWithImages(projects: ProjectEntry[]): Promise<ProjectEntry[]> {
-  const key = JSON.stringify(projects.map(p => p.title));
+  const key = JSON.stringify(projects);
   if (_buildResult.has(key)) return _buildResult.get(key)!;
   const p = _doAugment(projects);
   _buildResult.set(key, p);
