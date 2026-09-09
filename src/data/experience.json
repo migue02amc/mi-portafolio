@@ -11,13 +11,17 @@
       "Ejecuté la migración de la app institucional Eminus a modelos declarativos con Jetpack Compose, implementando Clean Architecture y Room para la persistencia local.",
       "Diseñé y ejecuté estrategias de calidad de software mediante pruebas unitarias, de integración y funcionales utilizando JUnit y MockK, garantizando la estabilidad de la aplicación institucional tras su transición tecnológica."
     ],
-    "tags": [
+    "technologies": [
       "Kotlin",
       "Jetpack Compose",
       "Room",
       "JUnit",
       "MockK",
       "Android Studio"
+    ],
+    "competencies": [
+      "Clean Architecture",
+      "Testing"
     ]
   },
   {
@@ -32,9 +36,11 @@
       "Desarrollé nuevas funcionalidades y resolví defectos en código heredado para el Sistema Institucional de Gestión de Tutorías.",
       "Diseñé y apliqué planes de prueba funcionales para la validación de cada entrega del sistema."
     ],
-    "tags": [
+    "technologies": [
       "PHP",
-      "MySQL",
+      "MySQL"
+    ],
+    "competencies": [
       "Planes de Prueba",
       "Mantenimiento"
     ]
@@ -51,7 +57,8 @@
       "Formación profesional en desarrollo de software, arquitectura de aplicaciones y aseguramiento de calidad.",
       "Proyectos académicos: TicketPlus (plataforma web), Medidietas (app multiplataforma), S.A.M.S. (sistema de escritorio)."
     ],
-    "tags": [
+    "technologies": [],
+    "competencies": [
       "Ingeniería de Software",
       "Arquitectura",
       "Calidad",

@@ -11,13 +11,17 @@
       "Executed the migration of the institutional Eminus app to declarative UI with Jetpack Compose, implementing Clean Architecture and Room for local persistence.",
       "Designed and executed software quality strategies through unit, integration, and functional testing using JUnit and MockK, ensuring the stability of the institutional application after its technological transition."
     ],
-    "tags": [
+    "technologies": [
       "Kotlin",
       "Jetpack Compose",
       "Room",
       "JUnit",
       "MockK",
       "Android Studio"
+    ],
+    "competencies": [
+      "Clean Architecture",
+      "Testing"
     ]
   },
   {
@@ -32,9 +36,11 @@
       "Developed new features and resolved defects in legacy code for the Institutional Tutoring Management System.",
       "Designed and applied functional test plans for the validation of each system delivery."
     ],
-    "tags": [
+    "technologies": [
       "PHP",
-      "MySQL",
+      "MySQL"
+    ],
+    "competencies": [
       "Test Plans",
       "Maintenance"
     ]
@@ -51,10 +57,11 @@
       "Professional training in software development, application architecture, and quality assurance.",
       "Academic projects: TicketPlus (web platform), Medidietas (multiplatform app), S.A.M.S. (desktop system)."
     ],
-    "tags": [
+    "technologies": [],
+    "competencies": [
       "Software Engineering",
       "Architecture",
-      "QA",
+      "Quality Assurance",
       "Universidad Veracruzana"
     ]
   }
