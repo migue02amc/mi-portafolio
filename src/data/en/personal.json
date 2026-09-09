@@ -35,8 +35,8 @@
     "github",
     "linkedin"
   ],
-  "bio": "Software developer with hands-on experience in mobile and backend applications. Capable of designing clean architectures and ensuring system stability through the design and execution of automated tests.",
-  "aboutLong": "Results-oriented software developer with hands-on experience in mobile and backend applications. Specialized in Kotlin, Node.js, and C#, I focus my work on designing clean architectures and writing automated tests (unit, integration, and functional). Accustomed to collaborating on code refactoring, containerized deployments, and bug resolution. I am looking to join a team where I can provide robust solutions, ensure software quality, and maintain continuous technical learning.",
+  "bio": "Software Engineer with hands-on experience in mobile ecosystems (Android, Kotlin, Jetpack Compose) and backend (Node.js, C#, PHP). I focus on building readable and maintainable applications by applying Clean Architecture, actively participating in the design of RESTful APIs and the integration of relational databases (MySQL, SQL Server). Through my experience in institutional environments, I integrate Quality Assurance (QA) into the development cycle, executing test plans and automation (JUnit, MockK) to validate deliverables. My goal is to contribute reliable code and continue consolidating my technical skills.",
+  "aboutLong": "Software Engineer with hands-on experience in mobile ecosystems (Android, Kotlin, Jetpack Compose) and backend (Node.js, C#, PHP). I focus on building readable and maintainable applications by applying Clean Architecture, actively participating in the design of RESTful APIs and the integration of relational databases (MySQL, SQL Server). Through my experience in institutional environments, I integrate Quality Assurance (QA) into the development cycle, executing test plans and automation (JUnit, MockK) to validate deliverables. My goal is to contribute reliable code and continue consolidating my technical skills.",
   "languages": [
     {
       "name": "Spanish",
