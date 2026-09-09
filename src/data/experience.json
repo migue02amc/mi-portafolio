@@ -9,8 +9,7 @@
     "icon": "device-phone-mobile",
     "achievements": [
       "Ejecuté la migración de la app institucional Eminus a modelos declarativos con Jetpack Compose, implementando Clean Architecture y Room para la persistencia local.",
-      "Diseñé y ejecuté estrategias de calidad de software mediante pruebas unitarias, de integración y funcionales utilizando JUnit y MockK, garantizando la estabilidad de la aplicación institucional tras su transición tecnológica.",
-      "Tecnologías: Kotlin, Jetpack Compose, Clean Architecture, Room, JUnit, MockK, Android Studio."
+      "Diseñé y ejecuté estrategias de calidad de software mediante pruebas unitarias, de integración y funcionales utilizando JUnit y MockK, garantizando la estabilidad de la aplicación institucional tras su transición tecnológica."
     ],
     "tags": [
       "Kotlin",
@@ -31,8 +30,7 @@
     "icon": "code-bracket-square",
     "achievements": [
       "Desarrollé nuevas funcionalidades y resolví defectos en código heredado para el Sistema Institucional de Gestión de Tutorías.",
-      "Diseñé y apliqué planes de prueba funcionales para la validación de cada entrega del sistema.",
-      "Tecnologías: PHP, MySQL, Planes de Prueba funcionales."
+      "Diseñé y apliqué planes de prueba funcionales para la validación de cada entrega del sistema."
     ],
     "tags": [
       "PHP",
