@@ -131,20 +131,20 @@ const projectsJson = JSON.stringify(
 
               <div class="project-footer relative z-10">
                 <div class="footer-shimmer" aria-hidden="true" />
-                <span class="category-badge">{project.category}</span>
-                {project.icon && icons[project.icon] && (
-                  <div class="card-icon shrink-0">
+                <span class="category-badge">
+                  {project.icon && icons[project.icon] && (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-5 h-5"
+                      class="badge-icon"
                       set:html={icons[project.icon]}
                     />
-                  </div>
-                )}
+                  )}
+                  {project.category}
+                </span>
                 <span class="view-hint">
                   <span class="view-hint-text">Ver detalles</span>
                   <svg
@@ -596,7 +596,10 @@ const projectsJson = JSON.stringify(
   }
 
   .category-badge {
-    font-size: 0.56rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.62rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -605,7 +608,7 @@ const projectsJson = JSON.stringify(
     border: 1px solid rgba(99, 102, 241, 0.12);
     opacity: 0.7;
     border-radius: 9999px;
-    padding: 0.25rem 0.75rem;
+    padding: 0.25rem 0.6rem 0.25rem 0.5rem;
     position: relative;
     z-index: 1;
     white-space: nowrap;
@@ -615,10 +618,19 @@ const projectsJson = JSON.stringify(
       border-color 0.3s ease,
       opacity 0.3s ease;
   }
+  .badge-icon {
+    width: 0.85rem;
+    height: 0.85rem;
+    flex-shrink: 0;
+    opacity: 0.8;
+  }
   .project-card:hover .category-badge {
     color: var(--text-muted);
     background: rgba(99, 102, 241, 0.1);
     border-color: rgba(99, 102, 241, 0.3);
+    opacity: 1;
+  }
+  .project-card:hover .badge-icon {
     opacity: 1;
   }
   .project-card.has-bg .category-badge {
@@ -740,10 +752,6 @@ const projectsJson = JSON.stringify(
     display: none;
   }
 
-  .card-icon {
-    color: rgba(99, 102, 241, 0.45);
-    transition: color 0.35s ease;
-  }
   .project-card:hover .view-hint svg {
     color: rgba(99, 102, 241, 0.85);
     transform: rotate(-8deg) scale(1.15);
@@ -1089,16 +1097,6 @@ const projectsJson = JSON.stringify(
   .modal-cta-wrap a:hover img {
     filter: saturate(10) invert(1);
     transform: scale(1.8);
-  }
-
-  .project-footer .card-icon svg {
-    transition:
-      transform 300ms ease,
-      opacity 300ms ease;
-  }
-  .project-card-inner:hover .project-footer .card-icon svg {
-    transform: translateY(80px);
-    opacity: 0;
   }
 
   [data-theme='light'] .float-icon-mdi {
