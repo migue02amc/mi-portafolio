@@ -53,7 +53,7 @@
     {
       "title": "Herramientas de Desarrollo",
       "skills": [
-        { "name": "Android Studio", "icon": "devicon:androidstudio" },
+        { "name": "Docker", "icon": "devicon:docker" },
         { "name": "Git", "icon": "devicon:git" },
         { "name": "GitHub", "icon": "devicon:github" }
       ]
